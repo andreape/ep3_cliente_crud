@@ -1,3 +1,9 @@
 # ep3_cliente_crud
 
-Andrea Alejandra Perez Matute
+Integrantes:
+- Pierre Ronny Senisse Diaz
+- Hans Robinzon Morales Flores
+- Ian Jeremy Períz Velazco
+- Jeanpaul Martín Ascencio Fasabi
+- Andrea Alejandra Perez Matute
+- Manuel Dario Cruzado Canelo
