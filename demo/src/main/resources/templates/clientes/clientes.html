@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Clientes</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>Listado de Clientes</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Dirección</th>
+        <th>Correo</th>
+        <th>Celular</th>
+        <th>Fecha de Creación</th>
+        <th>Fecha de Modificación</th>
+        <th>Acciones</th>
+    </tr>
+    <tr th:each="cliente : ${clientes}">
+        <td th:text="${cliente.id}"></td>
+        <td th:text="${cliente.nombre}"></td>
+        <td th:text="${cliente.direccion}"></td>
+        <td th:text="${cliente.correo}"></td>
+        <td th:text="${cliente.celular}"></td>
+        <td th:text="${cliente.fechaCreacion}"></td>
+        <td th:text="${cliente.fechaModificacion}"></td>
+        <td class="actions">
+            <a th:href="@{/clientes/editar/{id}(id=${cliente.id})}">Editar</a>
+            <a th:href="@{/clientes/eliminar/{id}(id=${cliente.id})}">Eliminar</a>
+        </td>
+    </tr>
+</table>
+<div class="add-button">
+    <a href="/clientes/formulario_cliente">Agregar Cliente</a>
+</div>
+</body>
+</html>
